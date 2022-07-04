@@ -1,0 +1,57 @@
+.Card__Container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    // margin-left: auto;
+    gap: 10px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+
+    &__Card {
+        width: 176px;
+        
+        
+        &__image {
+            position: relative;
+            img {
+                width: 176px;
+                height: 235px;
+            }
+
+
+            &__soldout {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background: white;
+                border-radius:  5px;
+                padding: 2px 5px;
+                font-weight: 600;
+                font-size: 10.24px;
+            }
+            &__info {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                font-weight:300 ;
+                img {
+                    width: 14px;
+                    height: 14px;
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                .text {
+                    margin-left: 5px;
+                }
+
+            }
+        }
+        &__info {
+            font-size: 12px;
+        }
+    }
+
+}
